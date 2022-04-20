@@ -42,6 +42,8 @@ class ApplicationController < Sinatra::Base
     task = Task.find(params[:id])
     task.update(
       finished: params[:finished],
+      actual_time: params[:actual_time],
+      finished_time: params[:finished_time]
   )
   task.to_json
 end

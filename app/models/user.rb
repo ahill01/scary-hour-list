@@ -5,8 +5,5 @@ class User < ActiveRecord::Base
         self.tasks.map {|task| task.name}.uniq
     end
 
-    def find_recs
-        
-    end
-       
+
 end
